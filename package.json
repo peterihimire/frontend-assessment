@@ -1,0 +1,19 @@
+{
+  "name": "frontend-assessment",
+  "version": "1.0.0",
+  "description": "frontend assessment project",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "frontend",
+    "assessment"
+  ],
+  "author": "Peter Ihimire",
+  "license": "MIT",
+  "homepage": "https://peterihimire.github.io/frontend-assessment",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
