@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  --primaryColor: #889fad;
+  --primaryColor: #4d6385;
   --secondaryColor: #6831ff;
   --mainWhite: #fff;
   --mainBlack: #444;
@@ -33,7 +33,7 @@ body {
 }
 .logo{
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   color: var(--secondaryColor);
   text-decoration: none;
@@ -84,7 +84,7 @@ body {
 @media screen and (min-width: 768px){
   .logo{
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: var(--mainWhite);
     text-decoration: none;
@@ -126,12 +126,11 @@ body {
   }
 }
 
-
 /* End of Navbar */
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/computermedcine.jpg')center/cover no-repeat;
+  background: linear-gradient(to right, rgba(78, 93, 107, 0.671), rgba(59, 85, 97, 0.671)), url('../images/womandoc.jpg')center/cover no-repeat;
   min-height: 100vh;
   color: var(--mainWhite);
   display: grid;
@@ -139,7 +138,6 @@ body {
   align-items: center;
   padding: 0 2rem;
 }
-
 
 /* End of Hero */
 
@@ -150,6 +148,19 @@ body {
   justify-content: space-between;
   align-items: center;
 
+}
+.banner-form {
+  box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.4);
+  background-color: var(--primaryColor);
+  padding: 4rem 3rem 1rem 3rem ;
+  margin: 0 0 2rem 0;
+  border-radius: .5rem;
+  /* font-size: 1.5rem; */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px){
   .banner-center {
