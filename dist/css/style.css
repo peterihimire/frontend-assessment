@@ -49,19 +49,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .nav-btn{
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
-
 .nav-header {
   display: flex;
   justify-content: space-between;
 }
-
 .nav-btn i{
   font-size: 2.5rem;
   color: var(--mainWhite);
@@ -86,11 +83,9 @@ body {
 .navbar .navbar-single {
   font-weight: bold;
 }
-
 .show-nav{
   height: 15rem;
 }
-
 @media screen and (min-width: 768px){
   .logo{
     display: inline-block;
@@ -99,7 +94,6 @@ body {
     color: var(--mainWhite);
     text-decoration: none;
   }
-
   .logo .logo-font {
     font-family: 'Comfortaa', cursive;
   }
@@ -126,7 +120,6 @@ body {
     height: auto;
     display: flex;
   }
-
   .nav-links a {
     display: block;
     text-decoration: none;
@@ -170,9 +163,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
-
 @media screen and (min-width: 768px){
   .banner-center {
     max-width: 105.0rem;
@@ -182,7 +173,6 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-
   .banner-title {
     font-family: 'Comfortaa', cursive;
   }
@@ -200,7 +190,6 @@ body {
   margin: 0 0 2rem 0;
   border-radius: .5rem;
   width: 30rem;
-  /* max-width: 27rem; */
 }
 form {
   display: flex;
@@ -208,7 +197,6 @@ form {
   justify-content: space-between;
   max-width: 100%;
 }
-
 .form-group {
   padding: 2rem 0 1.5rem 0;
 }
@@ -217,12 +205,13 @@ form {
   font-weight: bold;
   padding: 0 0 .5rem 0;
 }
-
+.form-group hr {
+  border: 1px dashed var(--lightGrey);
+}
 .input-with-icon input[type=text] {
   padding-left: 40px;
   width: 100%;
 }
-
 .input-with-icon {
   position: relative;
 }
@@ -240,7 +229,6 @@ form {
   color: var(--mainWhite);
   padding: 9px 15px;
 }
-
 .input-with-icon .fa-user-circle {
   position: absolute;
   top: 0;
@@ -255,7 +243,6 @@ input[type="text"], input[type="email"]{
   border: none;
   color: var(--mainWhite);
 }
-
 ::placeholder{
   color: var(--mainWhite);
   font-weight: bold;
@@ -266,14 +253,14 @@ input[type="text"], input[type="email"]{
 }
 .password-label p a {
   color: var(--lightGrey);
-  text-decoration-style: dashed;
+  text-decoration-style: none;
+  text-decoration: none;
   font-size: 1.1rem;
 }
 .login-input .email-label {
   padding: 0 0 .5rem 0;
   display: flex;
 }
-
 .login-input {
   padding: 4rem 0;
 }
@@ -282,6 +269,10 @@ input[type="text"], input[type="email"]{
 }
 .login-header h2 {
   padding-bottom: .5rem;
+}
+.login-create-account p {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 .btn{
   padding: 1rem 2rem;
@@ -296,11 +287,6 @@ input[type="text"], input[type="email"]{
   color: var(--secondaryColor);
   text-decoration: none;
 }
-.login-create-account p {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
 @media screen and (min-width:768px){
   .banner-form {
     box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.4);
