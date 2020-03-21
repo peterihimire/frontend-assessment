@@ -1,0 +1,140 @@
+:root {
+  font-size: 62.5%;
+  --primaryColor: #889fad;
+  --secondaryColor: #6831ff;
+  --mainWhite: #fff;
+  --mainBlack: #444;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--mainGrey);
+  overflow-x: hidden;
+  line-height: var(--lineHeight);
+  color: var(--mainBlack);
+  font-size: 1.6rem;
+}
+
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--mainWhite);
+  padding: 2rem 2rem;
+  z-index: 1;
+}
+.logo{
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn i{
+  font-size: 2.5rem;
+  color: var(--secondaryColor);
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: var(--mainSpacing);
+}
+
+.show-nav{
+  height: 15rem;
+}
+
+@media screen and (min-width: 768px){
+  .logo{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--mainWhite);
+    text-decoration: none;
+  }
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: none;
+    padding: 2rem 2rem;
+    z-index: 1;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    max-width: 117.0rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: var(--mainSpacing);
+  }
+}
+
+
+/* End of Navbar */
+
+/* Hero */
+.hero {
+  background: url('../images/computermedcine.jpg')center/cover no-repeat;
+  min-height: 100vh;
+}
+/* End of Hero */
