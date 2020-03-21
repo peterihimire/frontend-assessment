@@ -1,0 +1,291 @@
+:root {
+  font-size: 62.5%;
+  --primaryColor: #506b85;
+  --secondaryColor: #0904f8;
+  --mainWhite: #fff;
+  --mainBlack: #444;
+  --lightGrey: #dadada;
+  --darkGrey: #494949;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Comfortaa', cursive; */
+  background: var(--mainGrey);
+  overflow-x: hidden;
+  line-height: var(--lineHeight);
+  color: var(--mainBlack);
+  font-size: 1.4rem;
+}
+
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondaryColor);
+  padding: 2rem 2rem;
+  z-index: 1;
+}
+.logo{
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+.logo .logo-font {
+  font-family: 'Comfortaa', cursive;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn i{
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  /* font-size: 1.6rem; */
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: var(--mainSpacing);
+}
+.navbar .navbar-single {
+  font-weight: bold;
+}
+
+.show-nav{
+  height: 15rem;
+}
+
+@media screen and (min-width: 768px){
+  .logo{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--mainWhite);
+    text-decoration: none;
+  }
+
+  .logo .logo-font {
+    font-family: 'Comfortaa', cursive;
+  }
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: none;
+    padding: 2rem 2rem;
+    z-index: 1;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    /* max-width: 117.0rem; */
+    max-width: 105.0rem;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0 1rem 4rem;
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: var(--mainSpacing);
+  }
+}
+/* End of Navbar */
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, rgba(87, 101, 116, 0.671), rgba(71, 97, 110, 0.671)), url('../images/womandoc.jpg')center/cover no-repeat;
+  min-height: 100vh;
+  color: var(--mainWhite);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  padding: 0 2rem;
+}
+/* End of Hero */
+
+/* Banner */
+.banner-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+@media screen and (min-width: 768px){
+  .banner-center {
+    max-width: 105.0rem;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-title {
+    font-family: 'Comfortaa', cursive;
+  }
+  .banner-title h2 {
+    margin-bottom: .5rem;
+  }
+}
+/* End of Banner */
+
+/* Login Form */
+.banner-form {
+  box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.4);
+  background-color: var(--primaryColor);
+  padding: 5rem 3rem 1.5rem 3rem ;
+  margin: 0 0 2rem 0;
+  border-radius: .5rem;
+  width: 37rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.form-group {
+  padding: 2rem 0 1.5rem 0;
+}
+.form-group label{
+  color: var(--lightGrey);
+  font-weight: bold;
+  padding: 0 0 .5rem 0;
+}
+
+.input-with-icon input[type=text] {
+  padding-left: 40px;
+  width: 100%;
+}
+
+.input-with-icon {
+  position: relative;
+}
+.input-with-icon .fa-key {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 15px;
+  color: var(--mainWhite);
+}
+.input-with-icon .fa-eye {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--mainWhite);
+  padding: 9px 15px;
+}
+
+.input-with-icon .fa-user-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--mainWhite);
+  padding: 9px 15px;
+}
+input[type="text"], input[type="email"]{
+  padding: 1rem;
+  background-color: var(--darkGrey);
+  border-radius: .3rem;
+  border: none;
+  color: var(--mainWhite);
+}
+
+::placeholder{
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+.password-label {
+  display: flex;
+  justify-content: space-between;
+}
+.password-label p a {
+  color: var(--lightGrey);
+  text-decoration-style: dashed;
+  font-size: 1.1rem;
+}
+.login-input .email-label {
+  padding: 0 0 .5rem 0;
+  display: flex;
+}
+
+.login-input {
+  padding: 4rem 0;
+}
+.login-header{
+  font-weight: bold;
+}
+.login-header h2 {
+  padding-bottom: .5rem;
+}
+.btn{
+  padding: 1rem 2rem;
+  background-color: var(--secondaryColor);
+  color: var(--mainWhite);
+  border: none;
+  border-radius: 50px;
+  margin: 0 0 3rem 0;
+  font-weight: bold;
+}
+.create-link{
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+.login-create-account p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+/* End of Login Form */
