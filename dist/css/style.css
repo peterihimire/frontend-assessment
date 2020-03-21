@@ -1,9 +1,12 @@
 :root {
   font-size: 62.5%;
-  --primaryColor: #4d6385;
-  --secondaryColor: #6831ff;
+  --primaryColor: #506b85;
+  --secondaryColor: #0904f8;
   --mainWhite: #fff;
   --mainBlack: #444;
+  --lightGrey: #dadada;
+  --darkGrey: #494949;
+
 }
 
 *{
@@ -18,7 +21,7 @@ body {
   overflow-x: hidden;
   line-height: var(--lineHeight);
   color: var(--mainBlack);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* Navbar */
@@ -76,6 +79,9 @@ body {
   font-weight: 400;
   letter-spacing: var(--mainSpacing);
 }
+.navbar .navbar-single {
+  font-weight: bold;
+}
 
 .show-nav{
   height: 15rem;
@@ -102,8 +108,9 @@ body {
     display: none;
   }
   .nav-center {
-    max-width: 117.0rem;
-    margin: 3rem auto;
+    /* max-width: 117.0rem; */
+    max-width: 100.0rem;
+    margin: 4rem auto;
     display: flex;
     justify-content: space-between;
   }
@@ -115,7 +122,7 @@ body {
   .nav-links a {
     display: block;
     text-decoration: none;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 0 1rem 4rem;
     color: var(--mainWhite);
     transition: var(--mainTransition);
     text-align: center;
@@ -130,11 +137,13 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, rgba(78, 93, 107, 0.671), rgba(59, 85, 97, 0.671)), url('../images/womandoc.jpg')center/cover no-repeat;
+  background: linear-gradient(to right, rgba(42, 50, 58, 0.671), rgba(44, 60, 68, 0.671)), url('../images/womandoc.jpg')center/cover no-repeat;
   min-height: 100vh;
   color: var(--mainWhite);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-column-gap: 4rem;
+  grid-row-gap: 2rem; */
   align-items: center;
   padding: 0 2rem;
 }
@@ -149,22 +158,10 @@ body {
   align-items: center;
 
 }
-.banner-form {
-  box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.4);
-  background-color: var(--primaryColor);
-  padding: 4rem 3rem 1rem 3rem ;
-  margin: 0 0 2rem 0;
-  border-radius: .5rem;
-  /* font-size: 1.5rem; */
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 @media screen and (min-width: 768px){
   .banner-center {
-    max-width: 117.0rem;
+    max-width: 100.0rem;
     margin: 0rem auto;
     display: flex;
     flex-direction: row;
@@ -174,3 +171,113 @@ form {
 }
 
 /* End of Banner */
+
+/* Login Form */
+.banner-form {
+  box-shadow: 0 4px 8px 0 rgba(0.1, 0.1, 0.1, 0.4);
+  background-color: var(--primaryColor);
+  padding: 5rem 3rem 1.5rem 3rem ;
+  margin: 0 0 2rem 0;
+  border-radius: .5rem;
+  width: 40rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.form-group {
+  padding: 2rem 0 1.5rem 0;
+}
+.form-group label{
+  color: var(--lightGrey);
+  font-weight: bold;
+  padding: 0 0 .5rem 0;
+  /* font-size: 1.2rem; */
+}
+
+.input-with-icon input[type=text] {
+  padding-left: 40px;
+  width: 100%;
+}
+
+.input-with-icon {
+  position: relative;
+}
+.input-with-icon .fa-key {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 15px;
+  color: var(--mainWhite);
+}
+.input-with-icon .fa-eye {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--mainWhite);
+  padding: 9px 15px;
+}
+
+.input-with-icon .fa-user-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--mainWhite);
+  padding: 9px 15px;
+}
+input[type="text"], input[type="email"]{
+  padding: 1rem;
+  background-color: var(--darkGrey);
+  border-radius: .3rem;
+  border: none;
+  color: var(--mainWhite);
+}
+
+::placeholder{
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+.password-label {
+  display: flex;
+  justify-content: space-between;
+}
+.password-label p a {
+  color: var(--lightGrey);
+  text-decoration-style: dashed;
+  font-size: 1.1rem;
+}
+.login-input .email-label {
+  padding: 0 0 .5rem 0;
+  display: flex;
+}
+
+.login-input {
+  padding: 4rem 0;
+}
+.login-header{
+  font-weight: bold;
+}
+.login-header h2 {
+  padding-bottom: .5rem;
+}
+.btn{
+  padding: 1rem 2rem;
+  background-color: var(--secondaryColor);
+  color: var(--mainWhite);
+  border: none;
+  border-radius: 50px;
+  margin: 0 0 3rem 0;
+  font-weight: bold;
+}
+.create-link{
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+.login-create-account p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* End of Login Form */
