@@ -44,7 +44,7 @@ body {
   width: 100%;
   background: var(--primaryColor);
   box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   z-index: 1;
 }
 .logo{
@@ -155,6 +155,8 @@ body {
   color: var(--mainWhite);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   align-items: center;
   padding: 0 2rem;
 }
@@ -165,6 +167,8 @@ body {
     color: var(--mainWhite);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     align-items: center;
     padding: 0 2rem;
   }
@@ -173,6 +177,8 @@ body {
 
 /* Banner */
 .banner-center{
+  max-width: 105.0rem;
+  margin: 0rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -181,6 +187,9 @@ body {
 .banner-title {
   font-family: 'Comfortaa', cursive;
   margin-bottom: .5rem;
+}
+.banner-title h2 {
+  padding: 0 0 1rem 0;
 }
 @media screen and (min-width: 768px){
   .banner-center {
@@ -283,8 +292,11 @@ input[type="text"], input[type="email"]{
 .login-header{
   font-weight: bold;
 }
+.login-header p {
+  font-size: 1.2rem;
+}
 .login-header h2 {
-  padding-bottom: .5rem;
+  padding-bottom: .6rem;
 }
 .login-create-account p {
   font-weight: bold;
@@ -296,7 +308,7 @@ input[type="text"], input[type="email"]{
   color: var(--mainWhite);
   border: none;
   border-radius: 50px;
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   font-weight: bold;
 }
 .create-link{
